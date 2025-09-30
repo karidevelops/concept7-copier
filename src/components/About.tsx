@@ -1,23 +1,23 @@
 const About = () => {
   return (
-    <section id="minusta" className="py-20 bg-secondary/30 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[var(--gradient-hero)] opacity-30"></div>
-      <div className="container mx-auto px-6 max-w-4xl relative z-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
-          Minusta
+    <section id="minusta" className="py-24 bg-background relative overflow-hidden">
+      <div className="container mx-auto px-6 max-w-6xl relative z-10">
+        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-center uppercase tracking-tight">
+          Tervetuloa verkkosivuillemme
         </h2>
-        <div className="space-y-6 text-lg text-muted-foreground leading-relaxed bg-card/50 backdrop-blur-sm p-8 rounded-lg border border-border shadow-[var(--shadow-elegant)]">
-          <p className="hover:text-foreground transition-colors duration-300">
+        <div className="w-24 h-1 bg-primary mx-auto mb-12"></div>
+        <div className="space-y-8 text-lg text-foreground leading-relaxed max-w-4xl mx-auto">
+          <p className="text-center">
             Olen yrittäjyys- ja kasvukonsultti, joka auttaa yrityksiä kirkastamaan tarjoomansa, 
             optimoimaan toimintansa ja rakentamaan kestävää kasvua. Taustani kattaa laajan 
             kokemuksen eri kokoisista yrityksistä startupeista pk-yrityksiin.
           </p>
-          <p className="hover:text-foreground transition-colors duration-300">
+          <p className="text-center">
             Vahvuuteni on käytännönläheinen ote ja kyky yhdistää strateginen näkemys arjen 
             toteutukseen. Uskon, että menestyvä liiketoiminta syntyy selkeästä tarjoomasta, 
             oikeasta hinnoittelusta ja tehokkaasta toiminnasta.
           </p>
-          <p className="hover:text-foreground transition-colors duration-300">
+          <p className="text-center">
             Työskentelen mieluiten pitkäjänteisissä kumppanuuksissa, joissa voin olla mukana 
             rakentamassa yrityksen menestystä askeleittain. Samalla olen käytettävissä myös 
             yksittäisten haasteiden ratkaisemiseen.

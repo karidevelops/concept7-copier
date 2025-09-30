@@ -2,34 +2,41 @@ import { Mail, Phone, Linkedin } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="yhteys" className="py-20 bg-background">
+    <section id="yhteys" className="py-24 bg-secondary/30">
       <div className="container mx-auto px-6 max-w-7xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12">
+        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 uppercase tracking-tight">
           Yhteystiedot
         </h2>
-        <div className="space-y-6">
+        <div className="w-24 h-1 bg-primary mb-12"></div>
+        <div className="space-y-8">
           <a 
             href="mailto:kari.vatka@concept7.fi"
-            className="flex items-center gap-4 text-lg text-foreground hover:text-accent transition-all duration-300 hover:translate-x-2 group"
+            className="flex items-center gap-6 text-xl text-foreground hover:text-primary transition-all duration-300 hover:translate-x-2 group"
           >
-            <Mail className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
-            <span>kari.vatka@concept7.fi</span>
+            <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-all duration-300">
+              <Mail className="w-7 h-7 text-primary group-hover:text-white transition-colors duration-300" />
+            </div>
+            <span className="font-medium">kari.vatka@concept7.fi</span>
           </a>
           <a 
             href="tel:+358456367653"
-            className="flex items-center gap-4 text-lg text-foreground hover:text-accent transition-all duration-300 hover:translate-x-2 group"
+            className="flex items-center gap-6 text-xl text-foreground hover:text-primary transition-all duration-300 hover:translate-x-2 group"
           >
-            <Phone className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
-            <span>045 636 7653</span>
+            <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-all duration-300">
+              <Phone className="w-7 h-7 text-primary group-hover:text-white transition-colors duration-300" />
+            </div>
+            <span className="font-medium">045 636 7653</span>
           </a>
           <a 
             href="https://www.linkedin.com/in/kari-vatka"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-4 text-lg text-foreground hover:text-accent transition-all duration-300 hover:translate-x-2 group"
+            className="flex items-center gap-6 text-xl text-foreground hover:text-primary transition-all duration-300 hover:translate-x-2 group"
           >
-            <Linkedin className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
-            <span>linkedin.com/in/kari-vatka</span>
+            <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-all duration-300">
+              <Linkedin className="w-7 h-7 text-primary group-hover:text-white transition-colors duration-300" />
+            </div>
+            <span className="font-medium">linkedin.com/in/kari-vatka</span>
           </a>
         </div>
       </div>
