@@ -32,6 +32,7 @@ const Services = () => {
             price="2 000 € / kk (alv 0%)"
             buttonText="Kysy lisää"
             onButtonClick={handleContactClick}
+            isPopular={true}
           />
           <ServiceCard
             title="Innovaatiopaketti – AI ja digitalisaatio"

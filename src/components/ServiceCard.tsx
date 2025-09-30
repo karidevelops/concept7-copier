@@ -7,11 +7,17 @@ interface ServiceCardProps {
   price: string;
   buttonText: string;
   onButtonClick: () => void;
+  isPopular?: boolean;
 }
 
-const ServiceCard = ({ title, description, price, buttonText, onButtonClick }: ServiceCardProps) => {
+const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isPopular }: ServiceCardProps) => {
   return (
-    <Card className="p-8 flex flex-col h-full hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-border bg-card group">
+    <Card className="p-8 flex flex-col h-full hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-border bg-card group relative">
+      {isPopular && (
+        <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wide shadow-lg">
+          Suosituin
+        </div>
+      )}
       <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent group-hover:scale-110 transition-all duration-300">
         <div className="w-8 h-8 rounded-full bg-accent group-hover:bg-white"></div>
       </div>
