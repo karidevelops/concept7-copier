@@ -1,10 +1,19 @@
 import { Button } from "@/components/ui/button";
+import heroImage from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[85vh] flex items-center justify-center bg-[var(--gradient-hero)] overflow-hidden">
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1),transparent_50%)]"></div>
+    <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+      <div className="absolute inset-0">
+        <img 
+          src={heroImage} 
+          alt="Hero background" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-primary/80"></div>
+      </div>
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.2),transparent_50%)]"></div>
       </div>
       <div className="container mx-auto px-6 max-w-7xl relative z-10">
         <div className="text-center animate-fade-in">
