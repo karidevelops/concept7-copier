@@ -29,7 +29,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="mt-16">
+        <div id="referenssit" className="mt-16">
           <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-8 text-center uppercase tracking-tight">
             Referenssit
           </h3>

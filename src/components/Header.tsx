@@ -19,6 +19,12 @@ const Header = () => {
             Minusta
           </a>
           <a 
+            href="#referenssit" 
+            className="text-base font-semibold text-foreground hover:text-accent transition-colors duration-300 uppercase tracking-wide"
+          >
+            Referenssit
+          </a>
+          <a 
             href="#yhteys" 
             className="text-base font-semibold text-foreground hover:text-accent transition-colors duration-300 uppercase tracking-wide"
           >
