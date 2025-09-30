@@ -8,13 +8,12 @@ const Hero = () => {
       </div>
       <div className="container mx-auto px-6 max-w-7xl relative z-10">
         <div className="text-center animate-fade-in">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground mb-6 animate-scale-in tracking-tight uppercase">
-            Me todella<br />
-            tarkoitamme bisnestä
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground mb-6 animate-scale-in tracking-tight">
+            Kasvu, kannattavuus<br />
+            ja arjen ratkaisut.
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-10 max-w-3xl mx-auto leading-relaxed font-light">
-            Yrittäjyys- ja kasvukonsultointi, joka auttaa yrityksiä kirkastamaan tarjoomansa, 
-            tehostamaan toimintansa ja rakentamaan kannattavaa kasvua.
+            Sparraan niin pieniä startupeja kuin kasvuvaiheessa olevia pk-yrityksiä. Kirkastetaan tarjooma, optimoidaan kustannukset ja rakennetaan hinnoittelu, joka kestää kasvun. Olen tukenasi myös yrityksen arkisissa haasteissa.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Button 
