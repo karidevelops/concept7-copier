@@ -1,9 +1,11 @@
+import logo from "@/assets/c7-logo.png";
+
 const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full bg-card border-b border-border shadow-sm">
       <div className="container mx-auto px-6 max-w-7xl flex h-20 items-center justify-between">
         <div className="flex items-center gap-2">
-          <span className="text-3xl font-bold text-foreground uppercase tracking-wider">Concept7</span>
+          <img src={logo} alt="Concept7 Logo" className="h-12 w-auto" />
         </div>
         <nav className="hidden md:flex gap-10">
           <a 
