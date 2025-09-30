@@ -12,9 +12,9 @@ interface ServiceCardProps {
 
 const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isPopular }: ServiceCardProps) => {
   return (
-    <Card className="p-8 flex flex-col h-full hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-border bg-card group relative">
+    <Card className="p-8 flex flex-col h-full hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-border bg-card group relative overflow-hidden">
       {isPopular && (
-        <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wide shadow-lg">
+        <div className="absolute -top-8 -right-8 bg-accent text-accent-foreground px-12 py-2 rotate-45 text-sm font-bold uppercase tracking-wide shadow-lg">
           Suosituin
         </div>
       )}
