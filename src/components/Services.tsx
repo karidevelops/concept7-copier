@@ -6,12 +6,9 @@ const Services = () => {
   };
 
   return (
-    <section id="palvelut" className="py-24 bg-[var(--gradient-blue)] relative overflow-hidden">
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.15),transparent_50%)]"></div>
-      </div>
+    <section id="palvelut" className="py-24 bg-secondary relative overflow-hidden">
       <div className="container mx-auto px-6 max-w-7xl relative z-10">
-        <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-6 text-center uppercase tracking-tight">
+        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-center uppercase tracking-tight">
           Palvelupaketit
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

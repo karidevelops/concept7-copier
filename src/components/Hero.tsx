@@ -27,8 +27,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Button 
               size="lg" 
-              variant="secondary"
-              className="text-lg px-8 py-6 shadow-[var(--shadow-elegant)] hover:shadow-[var(--shadow-glow)] transition-all duration-300 hover:scale-105 font-semibold"
+              className="text-lg px-8 py-6 bg-accent hover:bg-accent-dark text-accent-foreground shadow-[var(--shadow-elegant)] hover:shadow-[var(--shadow-glow)] transition-all duration-300 hover:scale-105 font-semibold"
               onClick={() => document.getElementById('palvelut')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Tutustu palveluihin

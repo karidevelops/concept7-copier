@@ -8,7 +8,7 @@ const About = () => {
         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-center uppercase tracking-tight">
           Minusta
         </h2>
-        <div className="w-24 h-1 bg-primary mx-auto mb-12"></div>
+        <div className="w-24 h-1 bg-accent mx-auto mb-12"></div>
         
         <div className="flex flex-col md:flex-row gap-12 items-start mb-16">
           <div className="md:w-1/3 flex justify-center">
