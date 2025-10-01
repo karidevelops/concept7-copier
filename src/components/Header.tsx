@@ -20,9 +20,16 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full bg-card border-b border-border shadow-sm">
       <div className="container mx-auto px-6 max-w-7xl flex h-20 items-center justify-between">
-        <div className="flex items-center gap-2">
+        <a 
+          href="#top" 
+          className="flex items-center gap-2 cursor-pointer"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+        >
           <img src={logo} alt="Concept7 Logo" className="h-12 w-auto" />
-        </div>
+        </a>
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-10">
