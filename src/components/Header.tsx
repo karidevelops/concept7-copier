@@ -39,8 +39,10 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         <Sheet open={open} onOpenChange={setOpen}>
-          <SheetTrigger className="md:hidden">
-            <Menu className="h-6 w-6" />
+          <SheetTrigger asChild>
+            <button className="md:hidden p-2" aria-label="Menu">
+              <Menu className="h-6 w-6" />
+            </button>
           </SheetTrigger>
           <SheetContent>
             <nav className="flex flex-col gap-6 mt-8">
