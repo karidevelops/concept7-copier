@@ -50,26 +50,7 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
         );
 
       case "popover":
-        return (
-          <Popover>
-            <PopoverTrigger asChild>
-              <Button variant="ghost" size="sm" className="absolute top-4 right-4 h-8 w-8 p-0 hover:bg-accent/20">
-                <Info className="h-4 w-4" />
-              </Button>
-            </PopoverTrigger>
-            <PopoverContent className="w-80">
-              <div className="space-y-2">
-                <h4 className="font-semibold text-sm mb-3">Paketin sisältö</h4>
-                {details.map((detail, idx) => (
-                  <div key={idx} className="text-sm">
-                    <strong className="text-foreground">{detail.label}:</strong>
-                    <p className="text-muted-foreground mt-1">{detail.content}</p>
-                  </div>
-                ))}
-              </div>
-            </PopoverContent>
-          </Popover>
-        );
+        return null; // Popover is now integrated into the icon circle
 
       case "modal":
         return (
@@ -133,10 +114,30 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
           Suosituin
         </div>
       )}
-      {detailsType === "popover" && renderDetails()}
-      <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent group-hover:scale-110 transition-all duration-300">
-        <div className="w-8 h-8 rounded-full bg-accent group-hover:bg-white"></div>
-      </div>
+      {detailsType === "popover" ? (
+        <Popover>
+          <PopoverTrigger asChild>
+            <button className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-6 hover:bg-accent hover:scale-110 transition-all duration-300 cursor-pointer group/icon">
+              <Info className="h-6 w-6 text-accent group-hover/icon:text-white transition-colors duration-300" />
+            </button>
+          </PopoverTrigger>
+          <PopoverContent className="w-80">
+            <div className="space-y-2">
+              <h4 className="font-semibold text-sm mb-3">Paketin sisältö</h4>
+              {details?.map((detail, idx) => (
+                <div key={idx} className="text-sm">
+                  <strong className="text-foreground">{detail.label}:</strong>
+                  <p className="text-muted-foreground mt-1">{detail.content}</p>
+                </div>
+              ))}
+            </div>
+          </PopoverContent>
+        </Popover>
+      ) : (
+        <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent group-hover:scale-110 transition-all duration-300">
+          <div className="w-8 h-8 rounded-full bg-accent group-hover:bg-white"></div>
+        </div>
+      )}
       <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-accent transition-colors duration-300 uppercase tracking-wide break-words">
         {title}
       </h3>
