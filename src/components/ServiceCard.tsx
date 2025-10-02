@@ -117,8 +117,9 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
       {detailsType === "popover" ? (
         <Popover>
           <PopoverTrigger asChild>
-            <button className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-6 hover:bg-accent hover:scale-110 transition-all duration-300 cursor-pointer group/icon">
-              <Info className="h-6 w-6 text-accent group-hover/icon:text-white transition-colors duration-300" />
+            <button className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-6 hover:bg-accent hover:scale-110 transition-all duration-300 cursor-pointer group/icon relative">
+              <div className="w-8 h-8 rounded-full bg-accent group-hover/icon:bg-white transition-colors duration-300 group-hover/icon:opacity-0"></div>
+              <Info className="h-6 w-6 text-accent group-hover/icon:text-white transition-all duration-300 absolute opacity-0 group-hover/icon:opacity-100 group-hover/icon:animate-pulse" />
             </button>
           </PopoverTrigger>
           <PopoverContent className="w-80">
