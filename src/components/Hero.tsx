@@ -1,15 +1,9 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/og-image-new.jpg";
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
-        <img 
-          src={heroImage} 
-          alt="Hero background" 
-          className="w-full h-full object-cover"
-        />
+        <img src={heroImage} alt="Hero background" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-primary/80"></div>
       </div>
       <div className="absolute inset-0 opacity-20">
@@ -21,29 +15,21 @@ const Hero = () => {
             Kasvu, kannattavuus<br />
             ja arjen ratkaisut.
           </h1>
-          <p className="text-xl md:text-2xl text-primary-foreground/90 mb-10 max-w-3xl mx-auto leading-relaxed font-light">
-            Sparraan niin pieniä startupeja kuin kasvuvaiheessa olevia pk-yrityksiä. Kirkastetaan tarjooma, optimoidaan kustannukset ja rakennetaan hinnoittelu, joka kestää kasvun. Olen tukenasi myös yrityksen arkisissa haasteissa.
-          </p>
+          <p className="text-xl md:text-2xl text-primary-foreground/90 mb-10 max-w-3xl mx-auto leading-relaxed font-light">Sparraan niin pieniä startupeja kuin kasvuvaiheessa olevia pk-yrityksiä. Kirkastetaan tarjooma, toptimoidaan kustannukset ja rakennetaan hinnoittelu, joka kestää kasvun. Olen tukenasi myös yrityksen arkisissa haasteissa.</p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Button 
-              size="lg" 
-              className="text-lg px-8 py-6 bg-accent hover:bg-accent-dark text-accent-foreground shadow-[var(--shadow-elegant)] hover:shadow-[var(--shadow-glow)] transition-all duration-300 hover:scale-105 font-semibold"
-              onClick={() => document.getElementById('palvelut')?.scrollIntoView({ behavior: 'smooth' })}
-            >
+            <Button size="lg" className="text-lg px-8 py-6 bg-accent hover:bg-accent-dark text-accent-foreground shadow-[var(--shadow-elegant)] hover:shadow-[var(--shadow-glow)] transition-all duration-300 hover:scale-105 font-semibold" onClick={() => document.getElementById('palvelut')?.scrollIntoView({
+            behavior: 'smooth'
+          })}>
               Tutustu palveluihin
             </Button>
-            <Button 
-              size="lg" 
-              className="text-lg px-8 py-6 bg-white/10 border-2 border-white text-white hover:bg-white hover:text-primary transition-all duration-300 hover:scale-105 font-semibold"
-              onClick={() => document.getElementById('yhteys')?.scrollIntoView({ behavior: 'smooth' })}
-            >
+            <Button size="lg" className="text-lg px-8 py-6 bg-white/10 border-2 border-white text-white hover:bg-white hover:text-primary transition-all duration-300 hover:scale-105 font-semibold" onClick={() => document.getElementById('yhteys')?.scrollIntoView({
+            behavior: 'smooth'
+          })}>
               Ota yhteyttä
             </Button>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
