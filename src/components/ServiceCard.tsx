@@ -117,7 +117,7 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
       {detailsType === "popover" ? (
         <Popover>
           <PopoverTrigger asChild>
-            <button className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-6 hover:bg-accent transition-colors duration-300 cursor-pointer group/icon relative animate-pulse-scale">
+            <button className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-6 hover:bg-accent transition-colors duration-300 cursor-pointer group/icon relative hover:animate-pulse-scale">
               <div className="w-8 h-8 rounded-full bg-accent group-hover/icon:bg-white transition-colors duration-300 group-hover/icon:opacity-0"></div>
               <Info className="h-6 w-6 text-accent group-hover/icon:text-white transition-colors duration-300 absolute opacity-0 group-hover/icon:opacity-100" />
             </button>
@@ -135,7 +135,7 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
           </PopoverContent>
         </Popover>
       ) : (
-        <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent transition-colors duration-300 animate-pulse-scale">
+        <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent group-hover:animate-pulse-scale transition-colors duration-300">
           <div className="w-8 h-8 rounded-full bg-accent group-hover:bg-white transition-colors duration-300"></div>
         </div>
       )}
