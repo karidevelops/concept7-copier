@@ -135,8 +135,8 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
           </PopoverContent>
         </Popover>
       ) : (
-        <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent group-hover:scale-110 transition-all duration-300">
-          <div className="w-8 h-8 rounded-full bg-accent group-hover:bg-white"></div>
+        <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent group-hover:animate-pulse-scale transition-colors duration-300">
+          <div className="w-8 h-8 rounded-full bg-accent group-hover:bg-white transition-colors duration-300"></div>
         </div>
       )}
       <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-accent transition-colors duration-300 uppercase tracking-wide break-words">
