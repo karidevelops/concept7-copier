@@ -18,7 +18,7 @@ const Services = () => {
             price="0 € (alv 0%)"
             buttonText="Varaa aika"
             onButtonClick={handleContactClick}
-            detailsType="accordion"
+            detailsType="popover"
             details={[
               { label: "⏱️ Kesto", content: "15 minuuttia" },
               { label: "📍 Toteutus", content: "Microsoft Teams tai puhelimitse" },
@@ -47,7 +47,7 @@ const Services = () => {
             buttonText="Kysy lisää"
             onButtonClick={handleContactClick}
             isPopular={true}
-            detailsType="modal"
+            detailsType="popover"
             details={[
               { label: "⏱️ Aikajänne", content: "Kuukausisopimus, jatkuva yhteistyö" },
               { label: "📅 Tapaamiset", content: "2-4 sparraustapaamista kuukaudessa, joustavasti sovittavissa" },
@@ -63,7 +63,7 @@ const Services = () => {
             price="4 900 € (alv 0%)"
             buttonText="Kysy lisää"
             onButtonClick={handleContactClick}
-            detailsType="expandable"
+            detailsType="popover"
             details={[
               { label: "⏱️ Kesto", content: "4-6 viikkoa kokonaisprojekti" },
               { label: "🔧 Prosessi", content: "Aloituspalaveri → Työpaja → Prototypointi → Tulosten esittely ja analyysi" },
