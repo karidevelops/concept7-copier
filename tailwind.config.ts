@@ -107,6 +107,14 @@ export default {
           "50%": {
             transform: "translateY(-10px)"
           }
+        },
+        "pulse-scale": {
+          "0%, 100%": {
+            transform: "scale(1)"
+          },
+          "50%": {
+            transform: "scale(1.1)"
+          }
         }
       },
       animation: {
@@ -115,6 +123,7 @@ export default {
         "fade-in": "fade-in 0.6s ease-out",
         "scale-in": "scale-in 0.4s ease-out",
         "float": "float 3s ease-in-out infinite",
+        "pulse-scale": "pulse-scale 1s ease-in-out infinite",
       },
     },
   },
