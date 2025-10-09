@@ -110,13 +110,13 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
 
   return (
     <div 
-      className="relative h-full cursor-pointer"
-      style={{ perspective: "1000px" }}
+      className="relative w-full cursor-pointer"
+      style={{ perspective: "1000px", minHeight: "600px" }}
       onClick={() => setIsFlipped(!isFlipped)}
     >
       <div 
         className={`relative w-full h-full transition-transform duration-600 ${isFlipped ? '[transform:rotateY(180deg)]' : ''}`}
-        style={{ transformStyle: "preserve-3d" }}
+        style={{ transformStyle: "preserve-3d", minHeight: "600px" }}
       >
         {/* Front side */}
         <Card className="absolute inset-0 p-8 flex flex-col hover:shadow-2xl transition-all duration-300 border border-border bg-card group overflow-hidden [backface-visibility:hidden]">

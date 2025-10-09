@@ -6,7 +6,7 @@ const Services = () => {
   };
 
   return (
-    <section id="palvelut" className="py-24 bg-secondary relative overflow-hidden">
+    <section id="palvelut" className="py-24 bg-secondary relative">
       <div className="container mx-auto px-6 max-w-7xl relative z-10">
         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-center uppercase tracking-tight">
           Palvelupaketit
