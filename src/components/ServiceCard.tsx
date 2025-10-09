@@ -24,6 +24,7 @@ interface ServiceCardProps {
 
 const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isPopular, detailsType, details }: ServiceCardProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [isFlipped, setIsFlipped] = useState(false);
 
   const renderDetails = () => {
     if (!details || !detailsType) return null;
@@ -108,56 +109,88 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
   };
 
   return (
-    <Card className="p-8 flex flex-col h-full hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-border bg-card group relative overflow-hidden">
-      {isPopular && (
-        <div className="absolute top-4 -right-10 bg-accent text-accent-foreground px-14 py-2 rotate-45 text-sm font-bold uppercase tracking-wide shadow-lg text-center animate-pulse">
-          Suosituin
-        </div>
-      )}
-      {detailsType === "popover" ? (
-        <Popover>
-          <PopoverTrigger asChild>
-            <button className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-6 hover:bg-accent transition-colors duration-300 cursor-pointer group/icon relative hover:animate-pulse-scale">
-              <div className="w-8 h-8 rounded-full bg-accent group-hover/icon:bg-white transition-colors duration-300 group-hover/icon:opacity-0"></div>
-              <Info className="h-6 w-6 text-accent group-hover/icon:text-white transition-colors duration-300 absolute opacity-0 group-hover/icon:opacity-100" />
-            </button>
-          </PopoverTrigger>
-          <PopoverContent className="w-80">
-            <div className="space-y-2">
-              <h4 className="font-semibold text-sm mb-3">Paketin sisältö</h4>
+    <div 
+      className="relative h-full cursor-pointer"
+      style={{ perspective: "1000px" }}
+      onClick={() => setIsFlipped(!isFlipped)}
+    >
+      <div 
+        className={`relative w-full h-full transition-transform duration-600 ${isFlipped ? '[transform:rotateY(180deg)]' : ''}`}
+        style={{ transformStyle: "preserve-3d" }}
+      >
+        {/* Front side */}
+        <Card className="absolute inset-0 p-8 flex flex-col hover:shadow-2xl transition-all duration-300 border border-border bg-card group overflow-hidden [backface-visibility:hidden]">
+          {isPopular && (
+            <div className="absolute top-4 -right-10 bg-accent text-accent-foreground px-14 py-2 rotate-45 text-sm font-bold uppercase tracking-wide shadow-lg text-center animate-pulse">
+              Suosituin
+            </div>
+          )}
+          <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent transition-colors duration-300 animate-pulse-scale">
+            <div className="w-8 h-8 rounded-full bg-accent group-hover:bg-white transition-colors duration-300"></div>
+          </div>
+          <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-accent transition-colors duration-300 uppercase tracking-wide break-words">
+            {title}
+          </h3>
+          <p className="text-muted-foreground mb-6 flex-grow leading-relaxed text-base">
+            {description}
+          </p>
+          <div className="mt-auto">
+            <p className="text-xl font-bold text-foreground mb-6">
+              {price}
+            </p>
+            <Button 
+              className="w-full bg-accent hover:bg-accent-dark text-accent-foreground font-semibold shadow-lg hover:shadow-xl transition-all duration-300 uppercase tracking-wide"
+              onClick={(e) => {
+                e.stopPropagation();
+                onButtonClick();
+              }}
+            >
+              {buttonText}
+            </Button>
+          </div>
+          <p className="text-xs text-muted-foreground text-center mt-4">
+            Klikkaa korttia nähdäksesi lisätiedot
+          </p>
+        </Card>
+
+        {/* Back side */}
+        <Card className="absolute inset-0 p-8 flex flex-col border border-border bg-card overflow-hidden [backface-visibility:hidden] [transform:rotateY(180deg)]">
+          {isPopular && (
+            <div className="absolute top-4 -right-10 bg-accent text-accent-foreground px-14 py-2 rotate-45 text-sm font-bold uppercase tracking-wide shadow-lg text-center animate-pulse">
+              Suosituin
+            </div>
+          )}
+          <h3 className="text-2xl font-bold text-foreground mb-6 uppercase tracking-wide break-words">
+            {title}
+          </h3>
+          <div className="flex-grow overflow-y-auto">
+            <h4 className="font-semibold text-sm mb-4 text-accent">Lisätiedot</h4>
+            <div className="space-y-4">
               {details?.map((detail, idx) => (
                 <div key={idx} className="text-sm">
-                  <strong className="text-foreground">{detail.label}:</strong>
-                  <p className="text-muted-foreground mt-1">{detail.content}</p>
+                  <strong className="text-foreground block mb-1">{detail.label}</strong>
+                  <p className="text-muted-foreground">{detail.content}</p>
                 </div>
               ))}
             </div>
-          </PopoverContent>
-        </Popover>
-      ) : (
-        <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent group-hover:animate-pulse-scale transition-colors duration-300">
-          <div className="w-8 h-8 rounded-full bg-accent group-hover:bg-white transition-colors duration-300"></div>
-        </div>
-      )}
-      <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-accent transition-colors duration-300 uppercase tracking-wide break-words">
-        {title}
-      </h3>
-      <p className="text-muted-foreground mb-6 flex-grow leading-relaxed text-base">
-        {description}
-      </p>
-      {detailsType && detailsType !== "popover" && renderDetails()}
-      <div className="mt-auto">
-        <p className="text-xl font-bold text-foreground mb-6">
-          {price}
-        </p>
-        <Button 
-          className="w-full bg-accent hover:bg-accent-dark text-accent-foreground font-semibold shadow-lg hover:shadow-xl transition-all duration-300 uppercase tracking-wide"
-          onClick={onButtonClick}
-        >
-          {buttonText}
-        </Button>
+          </div>
+          <div className="mt-6">
+            <Button 
+              className="w-full bg-accent hover:bg-accent-dark text-accent-foreground font-semibold shadow-lg hover:shadow-xl transition-all duration-300 uppercase tracking-wide"
+              onClick={(e) => {
+                e.stopPropagation();
+                onButtonClick();
+              }}
+            >
+              {buttonText}
+            </Button>
+          </div>
+          <p className="text-xs text-muted-foreground text-center mt-4">
+            Klikkaa palataksesi takaisin
+          </p>
+        </Card>
       </div>
-    </Card>
+    </div>
   );
 };
 

@@ -115,6 +115,22 @@ export default {
           "50%": {
             transform: "scale(1.1)"
           }
+        },
+        "flip-to-back": {
+          "0%": {
+            transform: "rotateY(0deg)"
+          },
+          "100%": {
+            transform: "rotateY(180deg)"
+          }
+        },
+        "flip-to-front": {
+          "0%": {
+            transform: "rotateY(180deg)"
+          },
+          "100%": {
+            transform: "rotateY(0deg)"
+          }
         }
       },
       animation: {
@@ -124,6 +140,8 @@ export default {
         "scale-in": "scale-in 0.4s ease-out",
         "float": "float 3s ease-in-out infinite",
         "pulse-scale": "pulse-scale 1s ease-in-out infinite",
+        "flip-to-back": "flip-to-back 0.6s ease-in-out forwards",
+        "flip-to-front": "flip-to-front 0.6s ease-in-out forwards",
       },
     },
   },
