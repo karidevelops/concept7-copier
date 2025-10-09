@@ -18,12 +18,12 @@ const Services = () => {
             price="0 € (alv 0%)"
             buttonText="Varaa aika"
             onButtonClick={handleContactClick}
-            detailsType="popover"
+            detailsType="flip"
             details={[
-              { label: "⏱️ Kesto", content: "15 minuuttia" },
-              { label: "📍 Toteutus", content: "Microsoft Teams tai puhelimitse" },
-              { label: "👥 Kenelle sopii", content: "Nopea neuvonpyyntö, ensitapaaminen" },
-              { label: "💰 Hinta", content: "Maksuton, ei sitoumuksia" }
+              { label: "Kesto", content: "15 minuuttia" },
+              { label: "Toteutus", content: "Microsoft Teams tai puhelimitse" },
+              { label: "Kenelle sopii", content: "Nopea neuvonpyyntö, ensitapaaminen" },
+              { label: "Hinta", content: "Maksuton, ei sitoumuksia" }
             ]}
           />
           <ServiceCard
@@ -32,12 +32,12 @@ const Services = () => {
             price="1 200 € / kertapaketti (alv 0%)"
             buttonText="Kysy lisää"
             onButtonClick={handleContactClick}
-            detailsType="popover"
+            detailsType="flip"
             details={[
-              { label: "⏱️ Kesto", content: "2-3 tapaamista, 1-2 viikkoa" },
-              { label: "📋 Sisältö", content: "Haasteiden kartoitus, konkreettiset toimenpidesuositukset, kirjallinen yhteenveto" },
-              { label: "👥 Kenelle sopii", content: "Kasvuhakuiset yritykset ja startup-vaiheessa olevat" },
-              { label: "✅ Lopputulos", content: "1-2 konkreettista toimenpidesuositusta toteutettavaksi" }
+              { label: "Alkukartoitus", content: "Perusteellinen keskustelu yrityksen nykytilanteesta, haasteista ja tavoitteista 2-3 tapaamisessa." },
+              { label: "Analysointi", content: "Tunnistetaan keskeisimmät pullonkaulat ja kehityskohteet, joihin kannattaa keskittyä ensimmäisenä." },
+              { label: "Toimenpidesuositukset", content: "Konkreettiset 1-2 suositusta, jotka voit ottaa heti käyttöön liiketoiminnan kehittämiseksi." },
+              { label: "Kirjallinen raportti", content: "Saat yhteenvedon keskusteluista ja toimenpidesuosituksista toteutuksen tueksi." }
             ]}
           />
           <ServiceCard
@@ -47,14 +47,14 @@ const Services = () => {
             buttonText="Kysy lisää"
             onButtonClick={handleContactClick}
             isPopular={true}
-            detailsType="popover"
+            detailsType="flip"
             details={[
-              { label: "⏱️ Aikajänne", content: "Kuukausisopimus, jatkuva yhteistyö" },
-              { label: "📅 Tapaamiset", content: "2-4 sparraustapaamista kuukaudessa, joustavasti sovittavissa" },
-              { label: "🎯 Fokus", content: "Strategiset päätökset, kasvun tukeminen, operatiivisten haasteiden ratkaisu" },
-              { label: "👥 Kenelle sopii", content: "Yrittäjät ja johto, jotka kaipaavat jatkuvaa tukea päätöksentekoon" },
-              { label: "⭐ Lisäedut", content: "Priorisoitu asiakkuus, nopea reagointi akuutteihin tarpeisiin" },
-              { label: "✅ Hyödyt", content: "Selkeämpi suunta, nopeammat päätökset, vähemmän yksinäisyyttä johdossa" }
+              { label: "Aikajänne", content: "Kuukausisopimus, jatkuva yhteistyö" },
+              { label: "Tapaamiset", content: "2-4 sparraustapaamista kuukaudessa, joustavasti sovittavissa" },
+              { label: "Fokus", content: "Strategiset päätökset, kasvun tukeminen, operatiivisten haasteiden ratkaisu" },
+              { label: "Kenelle sopii", content: "Yrittäjät ja johto, jotka kaipaavat jatkuvaa tukea päätöksentekoon" },
+              { label: "Lisäedut", content: "Priorisoitu asiakkuus, nopea reagointi akuutteihin tarpeisiin" },
+              { label: "Hyödyt", content: "Selkeämpi suunta, nopeammat päätökset, vähemmän yksinäisyyttä johdossa" }
             ]}
           />
           <ServiceCard
@@ -63,13 +63,13 @@ const Services = () => {
             price="4 900 € (alv 0%)"
             buttonText="Kysy lisää"
             onButtonClick={handleContactClick}
-            detailsType="popover"
+            detailsType="flip"
             details={[
-              { label: "⏱️ Kesto", content: "4-6 viikkoa kokonaisprojekti" },
-              { label: "🔧 Prosessi", content: "Aloituspalaveri → Työpaja → Prototypointi → Tulosten esittely ja analyysi" },
-              { label: "💡 Teknologiat", content: "AI-ratkaisujen kartoitus (ChatGPT, koneoppiminen, automaatio), digitaalisten palveluiden suunnittelu" },
-              { label: "✅ Lopputulos", content: "Konkreettinen prototyyppi tai demo, tekninen toteutussuunnitelma, liiketoimintapotentiaalin arvio" },
-              { label: "👥 Kenelle sopii", content: "Yritykset, jotka haluavat hyödyntää uutta teknologiaa kilpailuedun saavuttamiseksi" }
+              { label: "Kesto", content: "4-6 viikkoa kokonaisprojekti" },
+              { label: "Prosessi", content: "Aloituspalaveri → Työpaja → Prototypointi → Tulosten esittely ja analyysi" },
+              { label: "Teknologiat", content: "AI-ratkaisujen kartoitus (ChatGPT, koneoppiminen, automaatio), digitaalisten palveluiden suunnittelu" },
+              { label: "Lopputulos", content: "Konkreettinen prototyyppi tai demo, tekninen toteutussuunnitelma, liiketoimintapotentiaalin arvio" },
+              { label: "Kenelle sopii", content: "Yritykset, jotka haluavat hyödyntää uutta teknologiaa kilpailuedun saavuttamiseksi" }
             ]}
           />
         </div>
