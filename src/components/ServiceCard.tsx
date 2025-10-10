@@ -166,8 +166,8 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
             <div className="space-y-2 flex-grow overflow-y-auto scrollbar-thin">
               {details?.map((detail, idx) => (
                 <div key={idx}>
-                  <div className="font-bold text-sm mb-1">{detail.label}</div>
-                  <div className="text-xs opacity-90 leading-tight">{detail.content}</div>
+                  <div className="font-bold text-lg mb-1">{detail.label}</div>
+                  <div className="text-lg opacity-90 leading-tight">{detail.content}</div>
                 </div>
               ))}
             </div>
