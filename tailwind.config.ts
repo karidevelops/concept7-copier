@@ -131,6 +131,14 @@ export default {
           "100%": {
             transform: "rotateY(0deg)"
           }
+        },
+        "glow-fade": {
+          "0%, 100%": {
+            opacity: "0.4"
+          },
+          "50%": {
+            opacity: "1"
+          }
         }
       },
       animation: {
@@ -142,6 +150,7 @@ export default {
         "pulse-scale": "pulse-scale 4s ease-in-out infinite",
         "flip-to-back": "flip-to-back 0.6s ease-in-out forwards",
         "flip-to-front": "flip-to-front 0.6s ease-in-out forwards",
+        "glow-fade": "glow-fade 3s ease-in-out infinite",
       },
     },
   },
