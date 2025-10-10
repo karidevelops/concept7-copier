@@ -34,10 +34,10 @@ const Services = () => {
             onButtonClick={handleContactClick}
             detailsType="flip"
             details={[
-              { label: "Alkukartoitus", content: "Perusteellinen keskustelu yrityksen nykytilanteesta, haasteista ja tavoitteista 2-3 tapaamisessa." },
-              { label: "Analysointi", content: "Tunnistetaan keskeisimmät pullonkaulat ja kehityskohteet, joihin kannattaa keskittyä ensimmäisenä." },
-              { label: "Toimenpidesuositukset", content: "Konkreettiset 1-2 suositusta, jotka voit ottaa heti käyttöön liiketoiminnan kehittämiseksi." },
-              { label: "Kirjallinen raportti", content: "Saat yhteenvedon keskusteluista ja toimenpidesuosituksista toteutuksen tueksi." }
+              { label: "Alkukartoitus", content: "2-3 tapaamista yrityksen tilanteesta ja tavoitteista." },
+              { label: "Analysointi", content: "Tunnistetaan keskeisimmät kehityskohteet." },
+              { label: "Toimenpiteet", content: "1-2 konkreettista suositusta käyttöön." },
+              { label: "Raportti", content: "Yhteenveto ja suositukset kirjallisena." }
             ]}
           />
           <ServiceCard
@@ -49,12 +49,11 @@ const Services = () => {
             isPopular={true}
             detailsType="flip"
             details={[
-              { label: "Aikajänne", content: "Kuukausisopimus, jatkuva yhteistyö" },
-              { label: "Tapaamiset", content: "2-4 sparraustapaamista kuukaudessa, joustavasti sovittavissa" },
-              { label: "Fokus", content: "Strategiset päätökset, kasvun tukeminen, operatiivisten haasteiden ratkaisu" },
-              { label: "Kenelle sopii", content: "Yrittäjät ja johto, jotka kaipaavat jatkuvaa tukea päätöksentekoon" },
-              { label: "Lisäedut", content: "Priorisoitu asiakkuus, nopea reagointi akuutteihin tarpeisiin" },
-              { label: "Hyödyt", content: "Selkeämpi suunta, nopeammat päätökset, vähemmän yksinäisyyttä johdossa" }
+              { label: "Sopimus", content: "Kuukausisopimus, jatkuva yhteistyö" },
+              { label: "Tapaamiset", content: "2-4 sparrausta/kk, joustavasti" },
+              { label: "Fokus", content: "Strategia, kasvu, haasteiden ratkaisu" },
+              { label: "Kenelle", content: "Yrittäjät ja johto" },
+              { label: "Hyödyt", content: "Selkeämpi suunta, nopeammat päätökset" }
             ]}
           />
           <ServiceCard
@@ -65,11 +64,11 @@ const Services = () => {
             onButtonClick={handleContactClick}
             detailsType="flip"
             details={[
-              { label: "Kesto", content: "4-6 viikkoa kokonaisprojekti" },
-              { label: "Prosessi", content: "Aloituspalaveri → Työpaja → Prototypointi → Tulosten esittely ja analyysi" },
-              { label: "Teknologiat", content: "AI-ratkaisujen kartoitus (ChatGPT, koneoppiminen, automaatio), digitaalisten palveluiden suunnittelu" },
-              { label: "Lopputulos", content: "Konkreettinen prototyyppi tai demo, tekninen toteutussuunnitelma, liiketoimintapotentiaalin arvio" },
-              { label: "Kenelle sopii", content: "Yritykset, jotka haluavat hyödyntää uutta teknologiaa kilpailuedun saavuttamiseksi" }
+              { label: "Kesto", content: "4-6 viikkoa" },
+              { label: "Prosessi", content: "Aloitus → Työpaja → Prototypointi → Esittely" },
+              { label: "Teknologiat", content: "AI-ratkaisut, digitaaliset palvelut" },
+              { label: "Lopputulos", content: "Prototyyppi, toteutussuunnitelma, potentiaalin arvio" },
+              { label: "Kenelle", content: "Yrityksille, jotka hakevat kilpailuetua teknologiasta" }
             ]}
           />
         </div>

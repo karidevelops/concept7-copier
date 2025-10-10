@@ -163,11 +163,11 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
                 Paketin sisältö
               </h3>
             </div>
-            <div className="space-y-2 flex-grow overflow-y-auto scrollbar-thin">
+            <div className="space-y-1.5 flex-grow overflow-y-auto scrollbar-thin">
               {details?.map((detail, idx) => (
                 <div key={idx}>
-                  <div className="font-bold text-lg mb-1">{detail.label}</div>
-                  <div className="text-lg opacity-90 leading-tight">{detail.content}</div>
+                  <div className="font-bold text-lg mb-0.5">{detail.label}</div>
+                  <div className="text-lg opacity-90 leading-snug">{detail.content}</div>
                 </div>
               ))}
             </div>
