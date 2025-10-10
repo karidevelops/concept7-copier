@@ -135,18 +135,18 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
               <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent group-hover:animate-pulse-scale transition-colors duration-300 flex-shrink-0">
                 <div className="w-5 h-5 rounded-full bg-accent group-hover:bg-white transition-colors duration-300"></div>
               </div>
-              <h3 className="text-xl font-bold text-foreground group-hover:text-accent transition-colors duration-300 uppercase tracking-wide break-words leading-tight">
+              <h3 className="text-lg font-bold text-foreground group-hover:text-accent transition-colors duration-300 uppercase tracking-wide break-words leading-tight">
                 {title}
               </h3>
             </div>
-            <p className="text-muted-foreground mb-4 flex-grow leading-snug text-base">
+            <p className="text-muted-foreground mb-4 flex-grow leading-snug text-lg">
               {description}
             </p>
             <div className="mt-auto">
-              <p className="text-2xl font-bold text-foreground mb-4">
+              <p className="text-lg font-bold text-foreground mb-4">
                 {price}
               </p>
-              <div className="flex items-center justify-center text-sm text-accent font-semibold">
+              <div className="flex items-center justify-center text-lg text-accent font-semibold">
                 <Info className="h-4 w-4 mr-2" />
                 Klikkaa nähdäksesi lisätiedot
               </div>
