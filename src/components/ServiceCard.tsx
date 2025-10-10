@@ -176,7 +176,7 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
                 {price}
               </p>
               <Button
-                className="w-full bg-white hover:bg-white/90 text-accent font-semibold shadow-lg hover:shadow-xl transition-all duration-300 uppercase tracking-wide rounded-full py-2 text-xs"
+                className="w-full bg-white hover:bg-white/90 text-accent font-semibold shadow-lg hover:shadow-xl transition-all duration-300 uppercase tracking-wide rounded-full py-2 text-base"
                 onClick={(e) => {
                   e.stopPropagation();
                   onButtonClick();
