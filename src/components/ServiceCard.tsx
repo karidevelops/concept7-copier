@@ -172,7 +172,7 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
               ))}
             </div>
             <div className="mt-2 pt-2 border-t border-white/20 flex-shrink-0">
-              <p className="text-lg font-bold mb-2">
+              <p className="text-lg font-bold mb-2 text-center">
                 {price}
               </p>
               <Button
