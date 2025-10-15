@@ -65,7 +65,7 @@ const Services = () => {
             detailsType="flip"
             details={[
               { label: "Kesto", content: "4-6 viikkoa" },
-              { label: "Prosessi", content: "Aloitus → Työpaja → Prototypointi → Esittely" },
+              { label: "Prosessi", content: "Työpaja → Prototypointi → Esittely" },
               { label: "Teknologiat", content: "AI-ratkaisut, digitaaliset palvelut" },
               { label: "Lopputulos", content: "Prototyyppi, toteutussuunnitelma, potentiaalin arvio" },
               { label: "Kenelle", content: "Yrityksille, jotka hakevat kilpailuetua teknologiasta" }
