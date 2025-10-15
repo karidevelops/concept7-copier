@@ -42,7 +42,7 @@ const Services = () => {
           />
           <ServiceCard
             title="Yrittäjän ja johdon tuki & sparraus"
-            description="Säännöllinen sparraus päätösten tueksi. Sisältää fokus-keskustelut ja tiiviit toimenpidesuositukset. Tehtävät määritellään tapauskohtaisesti yrityksen tarpeen mukaan."
+            description="Säännöllinen sparraus päätösten tueksi. Sisältää fokus-keskustelut ja tiiviit toimenpidesuositukset. Tehtävät määritellään tapauskohtaisesti yrityksen tarpeen mukaan. Palvelun voit irtisanoa milloin vain ilman irtisanomisaikaa."
             price="2 000 € / kk (alv 0%)"
             buttonText="Kysy lisää"
             onButtonClick={handleContactClick}
