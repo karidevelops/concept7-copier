@@ -14,7 +14,7 @@ const Services = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <ServiceCard
             title="Nopea sparraus – 15 min"
-            description="Pikakartoitus tavoitteista, tilanteesta ja seuraavasta askeleesta. Toteutus Teamsissa tai puhelimitse."
+            description="Pikakartoitus tavoitteista, tilanteesta ja seuraavasta askeleesta. Keskustelun aikana voidaan jo ideoida ratkaisumalleja. Toteutus Teamsissa tai puhelimitse."
             price="0 € (alv 0%)"
             buttonText="Varaa aika"
             onButtonClick={handleContactClick}
