@@ -143,7 +143,7 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
               {description}
             </p>
             <div className="mt-auto">
-              <p className="text-lg font-bold text-foreground mb-4">
+              <p className="text-lg font-bold text-foreground mb-4 text-center">
                 {price}
               </p>
               <div className="flex items-center justify-center text-lg text-accent font-semibold">
@@ -231,7 +231,7 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
       </p>
       {detailsType && detailsType !== "popover" && renderDetails()}
       <div className="mt-auto">
-        <p className="text-xl font-bold text-foreground mb-6">
+        <p className="text-xl font-bold text-foreground mb-6 text-center">
           {price}
         </p>
         <Button
