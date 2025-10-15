@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/og-image-new.jpg";
+import heroImage from "@/assets/hero-bg-new.jpg";
 const Hero = () => {
   return <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
