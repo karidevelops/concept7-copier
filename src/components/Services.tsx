@@ -29,7 +29,7 @@ const Services = () => {
           <ServiceCard
             title="Starttipaketti – Idean sparraus tai arjen haasteet"
             description="Kasvuhaluisille ja toimintaa tehostaville yrityksille ja startupeille. Sisältää idean sparrauksen yrityksen olemassaolevasta haasteista ja 1-2 konkreettista toimenpidesuositusta."
-            price="1 200 € / kertapaketti (alv 0%)"
+            price="1 200 € (alv 0%)"
             buttonText="Kysy lisää"
             onButtonClick={handleContactClick}
             detailsType="flip"
