@@ -167,7 +167,7 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
               {details?.map((detail, idx) => (
                 <div key={idx}>
                   <div className="font-bold text-lg mb-0.5">{detail.label}</div>
-                  <div className="text-lg opacity-90 leading-snug">{detail.content}</div>
+                  <div className="text-lg opacity-90 leading-snug">{detail.content} = arvio potentiaalista</div>
                 </div>
               ))}
             </div>
