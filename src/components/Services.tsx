@@ -34,7 +34,7 @@ const Services = () => {
             onButtonClick={handleContactClick}
             detailsType="flip"
             details={[
-              { label: "Alkukartoitus", content: "2-3 tapaamista yrityksen tilanteesta ja tavoitteista." },
+              { label: "Alkukartoitus", content: "2 tapaamista yrityksen tilanteesta ja tavoitteista." },
               { label: "Analysointi", content: "Tunnistetaan keskeisimmät kehityskohteet." },
               { label: "Toimenpiteet", content: "1-2 konkreettista suositusta käyttöön." },
               { label: "Raportti", content: "Yhteenveto ja suositukset kirjallisena." }
