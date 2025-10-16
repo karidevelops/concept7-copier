@@ -123,30 +123,30 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
           onClick={() => setIsFlipped(!isFlipped)}
         >
           {/* Front side */}
-          <Card className="absolute inset-0 p-5 flex flex-col h-full hover:shadow-2xl transition-shadow duration-300 border border-border bg-card group overflow-hidden" style={{ backfaceVisibility: "hidden" }}>
+          <Card className="absolute inset-0 p-6 flex flex-col h-full hover:shadow-2xl transition-shadow duration-300 border border-border bg-card group overflow-hidden" style={{ backfaceVisibility: "hidden" }}>
             {isPopular && (
-              <div className="absolute -top-1 -right-1 w-32 h-32 overflow-hidden">
-                <div className="absolute top-4 -right-10 bg-accent text-accent-foreground px-20 py-1.5 rotate-45 text-sm font-bold uppercase tracking-wide text-center w-56 animate-glow-fade">
+              <div className="absolute top-0 right-0 w-32 h-32 overflow-hidden pointer-events-none">
+                <div className="absolute top-6 -right-8 bg-accent text-accent-foreground px-16 py-1.5 rotate-45 text-xs font-bold uppercase tracking-wide text-center shadow-lg">
                   Suosituin
                 </div>
               </div>
             )}
-            <div className="flex items-center gap-3 mb-4 pr-20">
+            <div className={`flex items-center gap-3 mb-4 ${isPopular ? 'pr-16' : ''}`}>
               <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent group-hover:animate-pulse-scale transition-colors duration-300 flex-shrink-0">
                 <div className="w-5 h-5 rounded-full bg-accent group-hover:bg-white transition-colors duration-300"></div>
               </div>
-              <h3 className="text-lg font-bold text-foreground group-hover:text-accent transition-colors duration-300 uppercase tracking-wide break-words leading-tight">
+              <h3 className="text-base font-bold text-foreground group-hover:text-accent transition-colors duration-300 uppercase tracking-wide break-words leading-tight">
                 {title}
               </h3>
             </div>
-            <p className="text-muted-foreground mb-4 flex-grow leading-snug text-lg">
+            <p className="text-muted-foreground mb-4 flex-grow leading-relaxed text-base">
               {description}
             </p>
             <div className="mt-auto">
-              <p className="text-lg font-bold text-foreground mb-4 text-center">
+              <p className="text-base font-bold text-foreground mb-3 text-center">
                 {price}
               </p>
-              <div className="flex items-center justify-center text-lg text-accent font-semibold">
+              <div className="flex items-center justify-center text-sm text-accent font-semibold">
                 <Info className="h-4 w-4 mr-2" />
                 Klikkaa nähdäksesi lisätiedot
               </div>
