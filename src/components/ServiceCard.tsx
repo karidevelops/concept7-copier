@@ -125,7 +125,13 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
           {/* Front side */}
           <Card className="absolute inset-0 flex flex-col h-full hover:shadow-2xl transition-shadow duration-300 border border-border bg-card group overflow-visible" style={{ backfaceVisibility: "hidden" }}>
             {isPopular && (
-              <div className="absolute -top-3 right-4 bg-accent text-accent-foreground px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wide shadow-lg flex items-center gap-2 z-10 animate-[pulse_3s_ease-in-out_infinite]">
+              <div 
+                className="absolute -top-3 right-4 bg-accent text-accent-foreground px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wide shadow-lg flex items-center gap-2 z-10 animate-[pulse_3s_ease-in-out_infinite]"
+                style={{
+                  transform: isFlipped ? "rotateY(180deg)" : "rotateY(0deg)",
+                  transition: "transform 0.7s"
+                }}
+              >
                 <Star className="h-4 w-4 fill-current" />
                 Suosituin
               </div>
