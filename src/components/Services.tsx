@@ -20,10 +20,10 @@ const Services = () => {
             onButtonClick={handleContactClick}
             detailsType="flip"
             details={[
-              { label: "Kesto", content: "15 minuuttia" },
-              { label: "Toteutus", content: "Microsoft Teams tai puhelimitse" },
-              { label: "Kenelle sopii", content: "Nopea neuvonpyyntö, ensitapaaminen" },
-              { label: "Hinta", content: "Maksuton, ei sitoumuksia" }
+              { label: "Kesto", content: "15 min" },
+              { label: "Toteutus", content: "Teams/puhelin" },
+              { label: "Kenelle", content: "Nopea neuvonta" },
+              { label: "Hinta", content: "Maksuton" }
             ]}
           />
           <ServiceCard
@@ -34,10 +34,10 @@ const Services = () => {
             onButtonClick={handleContactClick}
             detailsType="flip"
             details={[
-              { label: "Alkukartoitus", content: "2 tapaamista yrityksen tilanteesta ja tavoitteista." },
-              { label: "Analysointi", content: "Tunnistetaan keskeisimmät kehityskohteet." },
-              { label: "Toimenpiteet", content: "1-2 konkreettista suositusta käyttöön." },
-              { label: "Raportti", content: "Yhteenveto ja suositukset kirjallisena." }
+              { label: "Kartoitus", content: "2 tapaamista tilanteesta" },
+              { label: "Analyysi", content: "Keskeiset kehityskohteet" },
+              { label: "Toimenpiteet", content: "1-2 suositusta" },
+              { label: "Raportti", content: "Yhteenveto kirjallisena" }
             ]}
           />
           <ServiceCard
@@ -49,11 +49,11 @@ const Services = () => {
             isPopular={true}
             detailsType="flip"
             details={[
-              { label: "Sopimus", content: "Kuukausisopimus, jatkuva yhteistyö" },
-              { label: "Tapaamiset", content: "2-4 sparrausta/kk, joustavasti" },
-              { label: "Fokus", content: "Strategia, kasvu, haasteiden ratkaisu" },
+              { label: "Sopimus", content: "Kuukausisopimus" },
+              { label: "Tapaamiset", content: "2-4 sparrausta/kk" },
+              { label: "Fokus", content: "Strategia, kasvu, ratkaisut" },
               { label: "Kenelle", content: "Yrittäjät ja johto" },
-              { label: "Hyödyt", content: "Selkeämpi suunta, nopeammat päätökset" }
+              { label: "Hyödyt", content: "Selkeä suunta, nopeat päätökset" }
             ]}
           />
           <ServiceCard
@@ -65,10 +65,10 @@ const Services = () => {
             detailsType="flip"
             details={[
               { label: "Kesto", content: "4-6 viikkoa" },
-              { label: "Prosessi", content: "Työpaja → Prototypointi → Esittely" },
-              { label: "Teknologiat", content: "AI-ratkaisut, digitaaliset palvelut" },
-              { label: "Lopputulos", content: "Prototyyppi, toteutussuunnitelma, potentiaalin arvio" },
-              { label: "Kenelle", content: "Yrityksille, jotka hakevat kilpailuetua teknologiasta" }
+              { label: "Prosessi", content: "Työpaja → Prototyyppi → Esittely" },
+              { label: "Teknologiat", content: "AI ja digitaaliset ratkaisut" },
+              { label: "Lopputulos", content: "Prototyyppi ja toteutussuunnitelma" },
+              { label: "Kenelle", content: "Teknologiasta kilpailuetua hakeville" }
             ]}
           />
         </div>

@@ -155,28 +155,28 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
 
           {/* Back side */}
           <Card className="absolute inset-0 p-4 flex flex-col h-full hover:shadow-2xl transition-shadow duration-300 border border-border bg-accent text-accent-foreground overflow-hidden" style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }}>
-            <div className="flex items-center gap-2 mb-2">
-              <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
-                <div className="w-4 h-4 rounded-full bg-white"></div>
+            <div className="flex items-center gap-2 mb-3">
+              <div className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+                <div className="w-3.5 h-3.5 rounded-full bg-white"></div>
               </div>
-              <h3 className="text-base font-bold uppercase tracking-wide">
+              <h3 className="text-sm font-bold uppercase tracking-wide">
                 Paketin sisältö
               </h3>
             </div>
-            <div className="space-y-1.5 flex-grow overflow-y-auto scrollbar-thin">
+            <div className="space-y-2 flex-grow overflow-y-auto scrollbar-thin">
               {details?.map((detail, idx) => (
                 <div key={idx}>
-                  <div className="font-bold text-lg mb-0.5">{detail.label}</div>
-                  <div className="text-lg opacity-90 leading-snug">{detail.content}</div>
+                  <div className="font-bold text-sm mb-0.5">{detail.label}</div>
+                  <div className="text-sm opacity-90 leading-tight">{detail.content}</div>
                 </div>
               ))}
             </div>
-            <div className="mt-2 pt-2 border-t border-white/20 flex-shrink-0">
-              <p className="text-lg font-bold mb-2 text-center">
+            <div className="mt-3 pt-3 border-t border-white/20 flex-shrink-0">
+              <p className="text-base font-bold mb-2 text-center">
                 {price}
               </p>
               <Button
-                className="w-full bg-white hover:bg-white/90 text-accent font-semibold shadow-lg hover:shadow-xl transition-all duration-300 uppercase tracking-wide rounded-full py-2 text-base"
+                className="w-full bg-white hover:bg-white/90 text-accent font-semibold shadow-lg hover:shadow-xl transition-all duration-300 uppercase tracking-wide rounded-full py-1.5 text-sm"
                 onClick={(e) => {
                   e.stopPropagation();
                   onButtonClick();
