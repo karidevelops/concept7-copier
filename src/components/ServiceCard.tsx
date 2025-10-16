@@ -129,11 +129,11 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
                 Suosituin
               </div>
             )}
-            <div className={`flex items-center gap-3 mb-4 ${isPopular ? 'mt-10' : 'mt-6'} px-6`}>
-              <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent group-hover:animate-pulse-scale transition-colors duration-300 flex-shrink-0">
+            <div className={`flex items-start gap-3 mb-4 px-6 ${isPopular ? 'pt-10' : 'pt-6'}`}>
+              <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent group-hover:animate-pulse-scale transition-colors duration-300 flex-shrink-0 mt-1">
                 <div className="w-5 h-5 rounded-full bg-accent group-hover:bg-white transition-colors duration-300"></div>
               </div>
-              <h3 className="text-base font-bold text-foreground group-hover:text-accent transition-colors duration-300 uppercase tracking-wide break-words leading-tight">
+              <h3 className="text-sm font-bold text-foreground group-hover:text-accent transition-colors duration-300 uppercase tracking-wide break-words leading-tight pt-1">
                 {title}
               </h3>
             </div>
