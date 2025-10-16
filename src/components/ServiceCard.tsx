@@ -113,7 +113,7 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
 
   if (detailsType === "flip") {
     return (
-      <div className="relative h-[440px]" style={{ perspective: "1000px" }}>
+      <div className="relative h-[500px]" style={{ perspective: "1000px" }}>
         <div
           className={`relative w-full h-full transition-transform duration-700 cursor-pointer`}
           style={{
@@ -130,23 +130,23 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
                 Suosituin
               </div>
             )}
-            <div className="flex items-start gap-2 mb-3 px-5 pt-5">
-              <div className="w-9 h-9 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent group-hover:animate-pulse-scale transition-colors duration-300 flex-shrink-0 mt-0.5">
-                <div className="w-4 h-4 rounded-full bg-accent group-hover:bg-white transition-colors duration-300"></div>
+            <div className="flex items-start gap-3 mb-4 px-6 pt-6">
+              <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent group-hover:animate-pulse-scale transition-colors duration-300 flex-shrink-0 mt-1">
+                <div className="w-5 h-5 rounded-full bg-accent group-hover:bg-white transition-colors duration-300"></div>
               </div>
-              <h3 className="text-xs font-bold text-foreground group-hover:text-accent transition-colors duration-300 uppercase tracking-wide break-words leading-tight pt-0.5 whitespace-pre-line">
+              <h3 className="text-sm font-bold text-foreground group-hover:text-accent transition-colors duration-300 uppercase tracking-wide break-words leading-tight pt-1 whitespace-pre-line">
                 {title}
               </h3>
             </div>
-            <p className="text-muted-foreground mb-3 flex-grow leading-snug text-sm px-5">
+            <p className="text-muted-foreground mb-4 flex-grow leading-relaxed text-base px-6">
               {description}
             </p>
-            <div className="mt-auto px-5 pb-5">
-              <p className="text-sm font-bold text-foreground mb-2 text-center">
+            <div className="mt-auto px-6 pb-6">
+              <p className="text-base font-bold text-foreground mb-3 text-center">
                 {price}
               </p>
-              <div className="flex items-center justify-center text-xs text-accent font-semibold">
-                <Info className="h-3.5 w-3.5 mr-1.5" />
+              <div className="flex items-center justify-center text-sm text-accent font-semibold">
+                <Info className="h-4 w-4 mr-2" />
                 Klikkaa lisätietoihin
               </div>
             </div>
@@ -154,28 +154,28 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
 
           {/* Back side */}
           <Card className="absolute inset-0 p-4 flex flex-col h-full hover:shadow-2xl transition-shadow duration-300 border border-border bg-accent text-accent-foreground overflow-hidden" style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }}>
-            <div className="flex items-center gap-2 mb-2">
-              <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
-                <div className="w-3 h-3 rounded-full bg-white"></div>
+            <div className="flex items-center gap-2 mb-3">
+              <div className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+                <div className="w-3.5 h-3.5 rounded-full bg-white"></div>
               </div>
-              <h3 className="text-xs font-bold uppercase tracking-wide">
+              <h3 className="text-sm font-bold uppercase tracking-wide">
                 Paketin sisältö
               </h3>
             </div>
-            <div className="space-y-1.5 flex-grow">
+            <div className="space-y-2 flex-grow overflow-y-auto scrollbar-thin">
               {details?.map((detail, idx) => (
                 <div key={idx}>
-                  <div className="font-bold text-xs mb-0.5">{detail.label}</div>
-                  <div className="text-xs opacity-90 leading-snug">{detail.content}</div>
+                  <div className="font-bold text-sm mb-0.5">{detail.label}</div>
+                  <div className="text-sm opacity-90 leading-tight">{detail.content}</div>
                 </div>
               ))}
             </div>
-            <div className="mt-2 pt-2 border-t border-white/20 flex-shrink-0">
-              <p className="text-sm font-bold mb-1.5 text-center">
+            <div className="mt-3 pt-3 border-t border-white/20 flex-shrink-0">
+              <p className="text-base font-bold mb-2 text-center">
                 {price}
               </p>
               <Button
-                className="w-full bg-white hover:bg-white/90 text-accent font-semibold shadow-lg hover:shadow-xl transition-all duration-300 uppercase tracking-wide rounded-full py-1.5 text-xs"
+                className="w-full bg-white hover:bg-white/90 text-accent font-semibold shadow-lg hover:shadow-xl transition-all duration-300 uppercase tracking-wide rounded-full py-1.5 text-sm"
                 onClick={(e) => {
                   e.stopPropagation();
                   onButtonClick();
