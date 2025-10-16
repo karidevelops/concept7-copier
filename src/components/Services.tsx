@@ -57,7 +57,7 @@ const Services = () => {
             ]}
           />
           <ServiceCard
-            title="Innovaatiopaketti – AI ja digitalisaatio"
+            title={"Innovaatio-\npaketti – AI ja digitalisaatio"}
             description="Nopealla prototypoinnilla arvioimme liiketoimintamallisi mahdollisuuksia. Digitaalisten palveluiden ideointi, AI-ratkaisujen kartoitus, työpaja ja tulosten analyysi."
             price="4 900 € (alv 0%)"
             buttonText="Kysy lisää"
