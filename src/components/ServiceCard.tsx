@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { Info, ChevronDown } from "lucide-react";
+import { Info, ChevronDown, Star } from "lucide-react";
 import { useState } from "react";
 
 interface ServiceDetail {
@@ -125,11 +125,12 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
           {/* Front side */}
           <Card className="absolute inset-0 flex flex-col h-full hover:shadow-2xl transition-shadow duration-300 border border-border bg-card group overflow-hidden" style={{ backfaceVisibility: "hidden" }}>
             {isPopular && (
-              <div className="absolute top-0 left-0 right-0 bg-accent text-accent-foreground py-3 text-xs font-bold uppercase tracking-wide text-center shadow-lg animate-pulse">
+              <div className="absolute top-4 right-4 bg-accent text-accent-foreground px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wide shadow-lg flex items-center gap-2">
+                <Star className="h-4 w-4 fill-current" />
                 Suosituin
               </div>
             )}
-            <div className={`flex items-start gap-3 mb-4 px-6 ${isPopular ? 'pt-12' : 'pt-6'}`}>
+            <div className="flex items-start gap-3 mb-4 px-6 pt-6">
               <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent group-hover:animate-pulse-scale transition-colors duration-300 flex-shrink-0 mt-1">
                 <div className="w-5 h-5 rounded-full bg-accent group-hover:bg-white transition-colors duration-300"></div>
               </div>
@@ -192,7 +193,8 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
   return (
     <Card className="p-8 flex flex-col h-full hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-border bg-card group relative overflow-hidden">
       {isPopular && (
-        <div className="absolute top-4 -right-10 bg-accent text-accent-foreground px-14 py-2 rotate-45 text-sm font-bold uppercase tracking-wide text-center animate-pulse">
+        <div className="absolute top-4 right-4 bg-accent text-accent-foreground px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wide shadow-lg flex items-center gap-2">
+          <Star className="h-4 w-4 fill-current" />
           Suosituin
         </div>
       )}
