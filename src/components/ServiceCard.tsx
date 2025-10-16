@@ -123,13 +123,13 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
           onClick={() => setIsFlipped(!isFlipped)}
         >
           {/* Front side */}
-          <Card className="absolute inset-0 p-6 flex flex-col h-full hover:shadow-2xl transition-shadow duration-300 border border-border bg-card group overflow-hidden" style={{ backfaceVisibility: "hidden" }}>
+          <Card className="absolute inset-0 flex flex-col h-full hover:shadow-2xl transition-shadow duration-300 border border-border bg-card group overflow-hidden" style={{ backfaceVisibility: "hidden" }}>
             {isPopular && (
               <div className="absolute top-0 left-0 right-0 bg-accent text-accent-foreground py-1.5 text-xs font-bold uppercase tracking-wide text-center shadow-lg animate-pulse">
                 Suosituin
               </div>
             )}
-            <div className={`flex items-center gap-3 mb-4 ${isPopular ? 'mt-8' : ''}`}>
+            <div className={`flex items-center gap-3 mb-4 ${isPopular ? 'mt-10' : 'mt-6'} px-6`}>
               <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent group-hover:animate-pulse-scale transition-colors duration-300 flex-shrink-0">
                 <div className="w-5 h-5 rounded-full bg-accent group-hover:bg-white transition-colors duration-300"></div>
               </div>
@@ -137,10 +137,10 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
                 {title}
               </h3>
             </div>
-            <p className="text-muted-foreground mb-4 flex-grow leading-relaxed text-base">
+            <p className="text-muted-foreground mb-4 flex-grow leading-relaxed text-base px-6">
               {description}
             </p>
-            <div className="mt-auto">
+            <div className="mt-auto px-6 pb-6">
               <p className="text-base font-bold text-foreground mb-3 text-center">
                 {price}
               </p>
