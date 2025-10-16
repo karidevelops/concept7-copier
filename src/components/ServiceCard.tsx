@@ -113,7 +113,7 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
 
   if (detailsType === "flip") {
     return (
-      <div className="relative h-[500px]" style={{ perspective: "1000px" }}>
+      <div className="relative h-[420px]" style={{ perspective: "1000px" }}>
         <div
           className={`relative w-full h-full transition-transform duration-700 cursor-pointer`}
           style={{
