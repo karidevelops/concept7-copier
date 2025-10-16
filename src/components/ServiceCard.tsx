@@ -148,7 +148,7 @@ const ServiceCard = ({ title, description, price, buttonText, onButtonClick, isP
               </p>
               <div className="flex items-center justify-center text-sm text-accent font-semibold">
                 <Info className="h-4 w-4 mr-2" />
-                Klikkaa nähdäksesi lisätiedot
+                Klikkaa lisätietoihin
               </div>
             </div>
           </Card>
