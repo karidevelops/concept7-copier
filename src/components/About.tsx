@@ -1,4 +1,4 @@
-import profileImage from "@/assets/kari-vatka.jpg";
+import profileImage from "@/assets/kari-vatka-new.jpg";
 import referenssitImage from "@/assets/referenssit.png";
 
 const About = () => {
