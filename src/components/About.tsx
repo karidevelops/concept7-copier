@@ -15,7 +15,7 @@ const About = () => {
             <img 
               src={profileImage} 
               alt="Profiilikuva Kari Vatka" 
-              className="rounded-lg shadow-2xl w-full max-w-sm h-auto object-cover"
+              className="rounded-lg shadow-2xl w-4/5 max-w-sm h-auto object-cover"
             />
           </div>
           
