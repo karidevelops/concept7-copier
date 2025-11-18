@@ -21,10 +21,13 @@ const About = () => {
           
           <div className="md:w-2/3 space-y-6 text-lg text-foreground leading-relaxed">
             <p>
-              Olen <strong>Kari Vatka</strong>, yrittäjä, yrityskonsultti ja kehittäjä, jolla on laaja kokemus yrityksen arjen pyörittämisestä, tuotekehityksestä, hinnoittelusta, kustannusten optimoinnista, rektytoinnista, myynnistä ja markkinoinnista sekä prosessien tehostamisesta. Hyödynnän työssäni tekoälyä ja digitaalisia työkaluja tuodakseni lisäarvoa yrityksille.
+              Olen <strong>Kari Vatka</strong>, yrittäjä, yrityskonsultti ja kehittäjä, jolla on laaja käytännön kokemus yrityksen arjen pyörittämisestä, tuotekehityksestä, hinnoittelusta, kustannusten optimoinnista, rekrytoinnista sekä myynnistä ja markkinoinnista. Hyödynnän työssäni tekoälyä ja digitaalisia työkaluja tuodakseni konkreettista ja mitattavaa lisäarvoa yrityksille.
             </p>
             <p>
-              Sparraan niin pieniä startupeja kuin kasvuvaiheessa olevia pk-yrityksiä kirkastamaan tarjooman ja rakentamaan kannattavan liiketoiminnan. En tarjoa vain strategista näkemystä, vaan olen myös käytännön tukena yrityksen arjen haasteissa, jotta päätöksiä ei tarvitse tehdä yksin.
+              Sparraan niin pieniä startupeja kuin kasvuvaiheessa olevia pk-yrityksiä kirkastamaan tarjooman, rakentamaan kasvupolun ja kehittämään kannattavan liiketoiminnan. En tarjoa vain strategista näkemystä, vaan tuen myös käytännön toteutuksessa – prosessien tehostamisesta hinnoittelumalleihin, myyntimateriaalien hiomisesta AI-ratkaisujen käyttöönottoon.
+            </p>
+            <p>
+              Tapanani on olla asiakkaan rinnalla arjen päätöksissä, sparraajana ja toisena mielipiteenä, jotta haasteita ei tarvitse ratkoa yksin. Työskentelytapani on suora, ratkaisukeskeinen ja käytännönläheinen: tavoitteeni on tehdä monimutkaisesta yksinkertaista ja viedä suunnitelmat maaliin asti.
             </p>
           </div>
         </div>
