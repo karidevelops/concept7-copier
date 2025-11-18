@@ -4,11 +4,11 @@ const Contact = () => {
   return (
     <section id="yhteys" className="py-24 bg-secondary/30">
       <div className="container mx-auto px-6 max-w-7xl">
-        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 uppercase tracking-tight">
+        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-center uppercase tracking-tight">
           Yhteystiedot
         </h2>
-        <div className="w-24 h-1 bg-accent mb-12"></div>
-        <div className="space-y-8">
+        <div className="w-24 h-1 bg-accent mx-auto mb-12"></div>
+        <div className="space-y-8 flex flex-col items-center">
           <a 
             href="mailto:kari@concept7.fi"
             className="flex items-center gap-6 text-xl text-foreground hover:text-accent transition-all duration-300 hover:translate-x-2 group"
