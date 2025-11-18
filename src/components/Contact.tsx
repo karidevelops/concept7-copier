@@ -9,7 +9,7 @@ const Contact = () => {
             Yhteystiedot
           </h2>
           <div className="w-24 h-1 bg-accent mb-12"></div>
-          <div className="space-y-8 flex flex-col items-start w-full max-w-md">
+          <div className="space-y-8 flex flex-col items-start w-full max-w-md pl-12">
           <a 
             href="mailto:kari@concept7.fi"
             className="flex items-center gap-6 text-xl text-foreground hover:text-accent transition-all duration-300 hover:translate-x-2 group"
