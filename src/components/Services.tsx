@@ -13,7 +13,7 @@ const Services = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <ServiceCard
-            title="Nopea sparraus – 15 min"
+            title="Ilmainen alkukartoitus – 15 min"
             description="Pikakartoitus tavoitteista, tilanteesta ja seuraavasta askeleesta. Keskustelun aikana voidaan jo ideoida ratkaisumalleja. Toteutus Teamsissa tai puhelimitse."
             price="0 € (alv 0%)"
             buttonText="Varaa aika"
@@ -27,33 +27,18 @@ const Services = () => {
             ]}
           />
           <ServiceCard
-            title="Starttipaketti – Idean sparraus tai arjen haasteet"
+            title="Tilannekatsaus ja toimenpidesuunnitelma"
             description="Kasvuhaluisille ja toimintaa tehostaville yrityksille ja startupeille. Sisältää idean sparrauksen yrityksen olemassaolevasta haasteista ja 1-2 konkreettista toimenpidesuositusta."
             price="1 200 € (alv 0%)"
             buttonText="Kysy lisää"
             onButtonClick={handleContactClick}
             detailsType="flip"
             details={[
+              { label: "Kesto", content: "1–2 viikkoa" },
               { label: "Kartoitus", content: "2 tapaamista tilanteesta" },
               { label: "Analyysi", content: "Keskeiset kehityskohteet" },
               { label: "Toimenpiteet", content: "1-2 suositusta" },
               { label: "Raportti", content: "Yhteenveto kirjallisena" }
-            ]}
-          />
-          <ServiceCard
-            title="Yrittäjän ja johdon tuki & sparraus"
-            description="Säännöllinen sparraus päätösten tueksi. Sisältää fokus-keskustelut ja tiiviit toimenpidesuositukset. Tehtävät määritellään tapauskohtaisesti yrityksen tarpeen mukaan. Palvelun voit irtisanoa milloin vain ilman irtisanomisaikaa."
-            price="2 000 € / kk (alv 0%)"
-            buttonText="Kysy lisää"
-            onButtonClick={handleContactClick}
-            isPopular={true}
-            detailsType="flip"
-            details={[
-              { label: "Sopimus", content: "Kuukausisopimus" },
-              { label: "Tapaamiset", content: "2-4 sparrausta/kk" },
-              { label: "Fokus", content: "Strategia, kasvu, ratkaisut" },
-              { label: "Kenelle", content: "Yrittäjät ja johto" },
-              { label: "Hyödyt", content: "Selkeä suunta, nopeat päätökset" }
             ]}
           />
           <ServiceCard
@@ -69,6 +54,22 @@ const Services = () => {
               { label: "Teknologiat", content: "AI ja digitaaliset ratkaisut" },
               { label: "Lopputulos", content: "Prototyyppi ja toteutussuunnitelma" },
               { label: "Kenelle", content: "Teknologiasta kilpailuetua hakeville" }
+            ]}
+          />
+          <ServiceCard
+            title="Jatkuva johdon tuki"
+            description="Säännöllinen tuki päätösten tueksi. Sisältää fokus-keskustelut ja tiiviit toimenpidesuositukset. Tehtävät määritellään tapauskohtaisesti yrityksen tarpeen mukaan."
+            price="2 000 € / kk (alv 0%)"
+            buttonText="Kysy lisää"
+            onButtonClick={handleContactClick}
+            isPopular={true}
+            detailsType="flip"
+            details={[
+              { label: "Sopimus", content: "Kuukausisopimus" },
+              { label: "Irtisanominen", content: "Milloin vain, ei sitoumusta" },
+              { label: "Tapaamiset", content: "2-4 sparrausta/kk" },
+              { label: "Fokus", content: "Strategia, kasvu, ratkaisut" },
+              { label: "Hyödyt", content: "Selkeä suunta, nopeat päätökset" }
             ]}
           />
         </div>
