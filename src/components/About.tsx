@@ -21,13 +21,13 @@ const About = () => {
           
           <div className="md:w-2/3 space-y-6 text-lg text-foreground leading-relaxed">
             <p>
-              Olen <strong>Kari Vatka</strong>, yrittäjä, yrityskonsultti ja kehittäjä, jolla on laaja käytännön kokemus yrityksen arjen pyörittämisestä, tuotekehityksestä, hinnoittelusta, kustannusten optimoinnista, rekrytoinnista sekä myynnistä ja markkinoinnista. Hyödynnän työssäni tekoälyä ja digitaalisia työkaluja tuodakseni konkreettista ja mitattavaa lisäarvoa yrityksille.
+              Olen <strong>Kari Vatka</strong>, yrittäjä ja liiketoiminnan kehittäjä. Perustin ja kasvatin teknologiayrityksen nollasta 25 hengen organisaatioksi ja olen johtanut useampia yritysostoja. Toimin tällä hetkellä kasvujohtajana, vastuualueenani mm. B2G SaaS -myynti, B2B-alihankintamyynti, rekrytointi, sopimushallinta ja kustannuslaskenta.
             </p>
             <p>
-              Sparraan niin pieniä startupeja kuin kasvuvaiheessa olevia pk-yrityksiä kirkastamaan tarjooman, rakentamaan kasvupolun ja kehittämään kannattavan liiketoiminnan. En tarjoa vain strategista näkemystä, vaan tuen myös käytännön toteutuksessa – prosessien tehostamisesta hinnoittelumalleihin, myyntimateriaalien hiomisesta AI-ratkaisujen käyttöönottoon.
+              Hyödynnän työssäni tekoälyä ja digitaalisia työkaluja päivittäin – sekä operatiivisen tehokkuuden että ohjelmistoprototyyppien rakentamisen kautta. Taustani antaa minulle laaja-alaisen näkökulman: en ole kapea-alainen erikoisosaaja, vaan liiketoiminnan ongelmanratkaisija, joka pystyy toimimaan myynnistä ja kasvusta rekrytointiin ja kustannushallintaan.
             </p>
             <p>
-              Tapanani on olla asiakkaan rinnalla arjen päätöksissä, sparraajana ja toisena mielipiteenä, jotta haasteita ei tarvitse ratkoa yksin. Työskentelytapani on suora, ratkaisukeskeinen ja käytännönläheinen: tavoitteeni on tehdä monimutkaisesta yksinkertaista ja viedä suunnitelmat maaliin asti.
+              Tuen yrityksiä kahdella tasolla. Isommissa toimeksiannoissa toimin interim-johtajana tai hallitusjäsenenä, jolloin otan operatiivista tai strategista vastuuta suoraan. Pienemmissä ja nopeammissa tarpeissa sparraan startupeja ja kasvuvaiheen pk-yrityksiä tarjooman kirkastamisessa, hinnoittelussa ja arjen haasteissa.
             </p>
           </div>
         </div>
