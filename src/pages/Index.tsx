@@ -4,6 +4,7 @@ import InterimBoard from "@/components/InterimBoard";
 import Services from "@/components/Services";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
+import CookieConsent from "@/components/CookieConsent";
 
 const Index = () => {
   return (
