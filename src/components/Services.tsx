@@ -42,21 +42,6 @@ const Services = () => {
             ]}
           />
           <ServiceCard
-            title="Innovaatiopaketti – AI ja digitalisaatio"
-            description="Nopealla prototypoinnilla arvioimme liiketoimintamallisi mahdollisuuksia. Digitaalisten palveluiden ideointi, AI-ratkaisujen kartoitus, työpaja ja tulosten analyysi."
-            price="4 900 € (alv 0%)"
-            buttonText="Kysy lisää"
-            onButtonClick={handleContactClick}
-            detailsType="flip"
-            details={[
-              { label: "Kesto", content: "4-6 viikkoa" },
-              { label: "Prosessi", content: "Työpaja → Prototyyppi → Esittely" },
-              { label: "Teknologiat", content: "AI ja digitaaliset ratkaisut" },
-              { label: "Lopputulos", content: "Prototyyppi ja toteutussuunnitelma" },
-              { label: "Kenelle", content: "Teknologiasta kilpailuetua hakeville" }
-            ]}
-          />
-          <ServiceCard
             title="Jatkuva johdon tuki"
             description="Säännöllinen tuki päätösten tueksi. Sisältää fokus-keskustelut ja tiiviit toimenpidesuositukset. Tehtävät määritellään tapauskohtaisesti yrityksen tarpeen mukaan."
             price="2 000 € / kk (alv 0%)"
@@ -70,6 +55,21 @@ const Services = () => {
               { label: "Tapaamiset", content: "2-4 sparrausta/kk" },
               { label: "Fokus", content: "Strategia, kasvu, ratkaisut" },
               { label: "Hyödyt", content: "Selkeä suunta, nopeat päätökset" }
+            ]}
+          />
+          <ServiceCard
+            title="Innovaatiopaketti – AI ja digitalisaatio"
+            description="Nopealla prototypoinnilla arvioimme liiketoimintamallisi mahdollisuuksia. Digitaalisten palveluiden ideointi, AI-ratkaisujen kartoitus, työpaja ja tulosten analyysi."
+            price="4 900 € (alv 0%)"
+            buttonText="Kysy lisää"
+            onButtonClick={handleContactClick}
+            detailsType="flip"
+            details={[
+              { label: "Kesto", content: "4-6 viikkoa" },
+              { label: "Prosessi", content: "Työpaja → Prototyyppi → Esittely" },
+              { label: "Teknologiat", content: "AI ja digitaaliset ratkaisut" },
+              { label: "Lopputulos", content: "Prototyyppi ja toteutussuunnitelma" },
+              { label: "Kenelle", content: "Teknologiasta kilpailuetua hakeville" }
             ]}
           />
         </div>
