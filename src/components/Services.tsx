@@ -27,7 +27,7 @@ const Services = () => {
             ]}
           />
           <ServiceCard
-            title="Tilannekatsaus ja toimenpidesuunnitelma"
+            title="Tilannekatsaus ja suunnitelma"
             description="Kasvuhaluisille ja toimintaa tehostaville yrityksille ja startupeille. Sisältää idean sparrauksen yrityksen olemassaolevasta haasteista ja 1-2 konkreettista toimenpidesuositusta."
             price="1 200 € (alv 0%)"
             buttonText="Kysy lisää"
