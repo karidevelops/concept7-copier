@@ -7,6 +7,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   const navLinks = [
+    { href: "#interim", label: "Interim" },
     { href: "#palvelut", label: "Palvelut" },
     { href: "#minusta", label: "Minusta" },
     { href: "#referenssit", label: "Referenssit" },
